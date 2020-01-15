@@ -1,0 +1,13 @@
+---
+pagination:
+  data: posts
+  size: 10
+permalink: /
+---
+<ul>
+  {% for item in pagination.items %}
+    <li>
+      <a href="/blog/{{ item.slug }}">{{ item.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: posts
+  size: 10
+permalink: blog{% if pagination.pageNumber > 0 %}/page{{ pagination.pageNumber + 1}}{% endif %}/index.html
+---
+<h1>Blog</h1>
+
+<ul>
+  {% for item in pagination.items %}
+    <li>
+      <a href="/blog/{{ item.slug }}">{{ item.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

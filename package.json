@@ -1,0 +1,20 @@
+{
+  "name": "eleventy-kirby",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npx eleventy",
+    "watch": "npx eleventy --watch",
+    "debug": "DEBUG=* npx eleventy"
+  },
+  "author": {
+    "name": "Bastian Allgeier",
+    "email": "bastian@getkirby.com",
+    "url": "https://getkirby.com"
+  },
+  "license": "MIT",
+  "homepage": "https://getkirby.com",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "axios": "^0.19.1"
+  }
+}

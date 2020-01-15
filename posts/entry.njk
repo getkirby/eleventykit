@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: posts
+  size: 1
+  alias: post
+permalink: blog/{{ post.slug }}/index.html
+---
+<article>
+
+  <h1>{{ post.title }}</h1>
+  <time>{{ post.date }}</time>
+
+  {{ post.text | safe }}
+
+</article>

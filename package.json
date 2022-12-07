@@ -1,8 +1,9 @@
 {
-  "name": "eleventy-kirby",
+  "name": "eleventykit",
   "version": "1.0.0",
   "scripts": {
     "build": "npx eleventy",
+    "serve": "npx eleventy --serve",
     "watch": "npx eleventy --watch",
     "debug": "DEBUG=* npx eleventy"
   },
@@ -14,7 +15,7 @@
   "license": "MIT",
   "homepage": "https://getkirby.com",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
-    "axios": "^0.19.1"
+    "@11ty/eleventy": "^1.0.2",
+    "ofetch": "^1.0.0"
   }
 }

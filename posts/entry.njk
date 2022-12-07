@@ -8,9 +8,13 @@ permalink: blog/{{ post.slug }}/index.html
 ---
 <article>
 
-  <h1>{{ post.title }}</h1>
-  <time>{{ post.date }}</time>
+  <header>
+    <h1>{{ post.title }}</h1>
+    <time>{{ post.date }}</time>
+  </header>
 
-  {{ post.text | safe }}
+  <div>
+    {{ post.text | safe }}
+  </div>
 
 </article>

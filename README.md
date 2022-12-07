@@ -1,8 +1,8 @@
 # Eleventykit
 
-The Eleventykit is a very simple (unstyled) example for a site, built with Kirby and 11ty.
+The Eleventykit is a very simple (unstyled) example for a site, built with [Kirby](https://getkirby.com) and [11ty](https://11ty.dev).
 
-Kirby’s query language (KQL) is used to fetch articles from our KQL playground: https://kql.getkirby.com
+[Kirby’s query language (KQL)](https://github.com/getkirby/kql) is used to fetch articles from our KQL playground: https://kql.getkirby.com
 
 Use your own Kirby installation with the KQL plugin to provide a powerful headless CMS for your static 11ty site.
 

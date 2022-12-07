@@ -1,10 +1,24 @@
-**Kirby: the CMS that adapts to any project, loved by developers and editors alike.**
+# Eleventykit
 
-The Eleventykit is a very simple (unstyled) example for a site, built with Kirby and 11ty
+The Eleventykit is a very simple (unstyled) example for a site, built with Kirby and 11ty.
 
 Kirby’s query language (KQL) is used to fetch articles from our KQL playground: https://kql.getkirby.com
 
 Use your own Kirby installation with the KQL plugin to provide a powerful headless CMS for your static 11ty site.
+
+## Installation
+
+1. Clone or download the repo. 
+2. Install dependencies
+```
+npm i
+```
+3. Serve the static site locally 
+```
+npm run serve
+```
+
+## About Kirby
 
 You can learn more about Kirby at [getkirby.com](https://getkirby.com).## What's Kirby?
 - **[getkirby.com](https://getkirby.com)** – Get to know the CMS.
@@ -20,4 +34,4 @@ You can learn more about Kirby at [getkirby.com](https://getkirby.com).## What's
 ---
 
 © 2009-2022 Bastian Allgeier
-[getkirby.com](https://getkirby.com) · [License agreement](https://getkirby.com/license)
+[getkirby.com](https://getkirby.com)

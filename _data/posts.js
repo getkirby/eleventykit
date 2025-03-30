@@ -1,22 +1,20 @@
-const { $fetch } = require("ofetch");
+import { $fetch } from "ofetch";
 
-module.exports = async function () {
+export default async function () {
+  const api = "https://kql.getkirby.com/api/query";
 
-    const api = "https://kql.getkirby.com/api/query";
+  const response = await $fetch(api, {
+    method: "post",
+    body: {
+      query: "page('notes').children.sortBy('date', 'desc')",
+      select: {
+        title: true,
+        text: "page.text.toBlocks.toHtml",
+        slug: true,
+        date: "page.date.toDate('d.m.Y')",
+      },
+    },
+  });
 
-    const response = await $fetch(api, {
-        method: "post",
-        body: {
-            query: "page('notes').children.sortBy('date', 'desc')",
-            select: {
-                title: true,
-                text: "page.text.toBlocks.toHtml",
-                slug: true,
-                date: "page.date.toDate('d.m.Y')"
-            }
-        }
-    });
-
-    return response.result;
-
+  return response.result;
 }

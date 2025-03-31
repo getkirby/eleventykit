@@ -15,7 +15,8 @@
   "license": "MIT",
   "homepage": "https://getkirby.com",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
-    "ofetch": "^1.0.0"
-  }
+    "@11ty/eleventy": "^3.0.0",
+    "ofetch": "^1.4.1"
+  },
+  "type": "module"
 }

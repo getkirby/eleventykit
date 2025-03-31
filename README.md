@@ -32,5 +32,5 @@ npm run serve
 
 ---
 
-© 2009-2022 Bastian Allgeier
+© 2009-2025 Bastian Allgeier
 [getkirby.com](https://getkirby.com)

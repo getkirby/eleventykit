@@ -1,4 +1,5 @@
 ---
+layout: layouts/base.njk
 pagination:
   data: posts
   size: 10
@@ -16,10 +17,10 @@ permalink: /
 <p>Check out <code>_data/posts.js</code> to find out how articles are loaded form the KQL API.</p>
 
 <ul>
-  {% for item in pagination.items %}
+  {% for post in pagination.items %}
   <li>
-      <a href="/blog/{{ item.slug }}">{{ item.title }}</a>
-    </li>
+    <a href="/blog/{{ post.slug }}/">{{ post.title }}</a>
+  </li>
   {% endfor %}
 </ul>
 
@@ -27,8 +28,8 @@ permalink: /
 
 <ul>
   <li><a href="https://mastodon.social/@getkirby">Mastodon</a></li>
+  <li><a href="https://bsky.app/profile/getkirby.com">Bluesky</a></li>
   <li><a href="https://chat.getkirby.com">Discord</a></li>
   <li><a href="https://instagram.com/getkirby">Instagram</a></li>
   <li><a href="https://youtube.com/kirbycasts">Youtube</a></li>
-  <li><a href="https://twitter.com/getkirby">Twitter</a></li>
 </ul>
